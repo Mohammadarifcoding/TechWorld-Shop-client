@@ -134,3 +134,442 @@ font-family: 'Roboto', sans-serif;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
+
+.conto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 210px;
+}
+
+.conto .SuperStyle {
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 210px;
+}
+
+.conto .SuperStyle button {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.conto .SuperStyle:hover button {
+  letter-spacing: 2px;
+}
+
+.conto .SuperStyle button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left,
+                rgba(255,255,255,0.15),
+                transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.conto .SuperStyle:hover a::before {
+  transform: skewX(45deg) translateX(200%);
+}
+
+.conto .SuperStyle::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 10px;
+  width: 30px;
+  background: rgb(8, 107, 183);
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.conto .SuperStyle:hover::before {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.conto .SuperStyle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  height: 10px;
+  width: 30px;
+  background: rgb(7, 95, 189);
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.conto .SuperStyle:hover::after {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.conto .SuperStyle:nth-child(1):before,
+.conto .SuperStyle:nth-child(1)::after {
+  background: #2bd2ff;
+  box-shadow: 0 0 5px #2bd2ff,
+    0 0 15px #2bd2ff,
+    0 0 30px #2bd2ff,
+    0 0 60px #2bd2ff;
+}
+
+.conto .SuperStyle:active button {
+  color: #000;
+}
+
+
+.secondCon .secondSuper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondCon .secondSuper button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #000000;
+  font-weight: 400px;
+  z-index: 1;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+}
+
+.secondCon .secondSuper:hover button {
+  letter-spacing: 3px;
+}
+
+.secondCon .secondSuper a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(45deg) translate(0);
+  transition: 0.5s;
+  filter: blur(0px);
+}
+
+.secondCon .secondSuper:hover button::before {
+  transform: skewX(45deg) translate(200px);
+}
+
+.secondCon .secondSuper::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.secondCon .secondSuper:hover::before /*lightup button*/ {
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.secondCon .secondSuper::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.secondCon .secondSuper:hover::after /*lightup button*/ {
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.secondCon .secondSuper:nth-child(1)::before, /*chnage 1*/
+.secondCon .secondSuper:nth-child(1)::after {
+  background: #0ffb2e;
+  box-shadow: 0 0 5px #0ffb2e, 0 0 15px #0ffb2e, 0 0 30px #0ffb2e,
+		0 0 60px #0ffb2e;
+}
+
+/* .designCard {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.designCard::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.designCard::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  -webkit-transform: translate3d(0, 0, 0) scale(0.95);
+          transform: translate3d(0, 0, 0) scale(0.95);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+.heading{
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.designCard p:not(.heading){
+  font-size: 14px;
+}
+
+.designCard p:last-child{
+  color:#e81cff;
+  font-weight: 600;
+}
+
+.designCard:hover::after{
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
+.designCard:hover::before{
+  -webkit-transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+      -ms-transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+          transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+} */
+
+
+
+/* .designdesigndesignCard {
+
+  border-radius: 20px;
+  background: #1b233d;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.designdesigndesignCard:hover {
+  transform: scale(1.05);
+}
+
+.designdesigndesignCard .top-section {
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%);
+  position: relative;
+}
+
+.designdesigndesignCard .top-section .border {
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 130px;
+  background: white;
+  background: #1b233d;
+  position: relative;
+  transform: skew(-40deg);
+  box-shadow: -10px -10px 0 0 #1b233d;
+}
+
+.designdesigndesignCard .top-section .border::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: -15px;
+  background: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.designdesigndesignCard .top-section::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}
+
+.designdesigndesignCard .top-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.designdesigndesignCard .top-section .icons .logo {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 7px 0 7px 15px;
+}
+
+.designdesigndesignCard .top-section .icons .logo .top-section {
+  height: 100%;
+}
+
+.designdesigndesignCard .top-section .icons .social-media {
+  height: 100%;
+  padding: 8px 15px;
+  display: flex;
+  gap: 7px;
+}
+
+.designdesigndesignCard .top-section .icons .social-media .svg {
+  height: 100%;
+  fill: #1b233d;
+}
+
+.designdesigndesignCard .top-section .icons .social-media .svg:hover {
+  fill: white;
+}
+
+.designdesigndesignCard .bottom-section {
+  margin-top: 15px;
+  padding: 10px 5px;
+}
+
+.designdesigndesignCard .bottom-section .title {
+  display: block;
+  font-size: 17px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.designdesigndesignCard .bottom-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.designdesigndesignCard .bottom-section .row .item {
+  flex: 30%;
+  text-align: center;
+  padding: 5px;
+  color: rgba(170, 222, 243, 0.721);
+}
+
+.designdesigndesignCard .bottom-section .row .item .big-text {
+  font-size: 12px;
+  display: block;
+}
+
+.designdesigndesignCard .bottom-section .row .item .regular-text {
+  font-size: 9px;
+}
+
+.designdesigndesignCard .bottom-section .row .item:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.126);
+  border-right: 1px solid rgba(255, 255, 255, 0.126);
+} */

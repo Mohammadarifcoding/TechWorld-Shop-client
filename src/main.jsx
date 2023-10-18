@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
-        loader:()=> fetch('/ShowRoom.json')
+        loader:()=> fetch('http://localhost:5000/service')
       },
       {
         path:'/AddProduct',
