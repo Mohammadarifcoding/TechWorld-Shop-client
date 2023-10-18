@@ -1,0 +1,121 @@
+[
+    {
+      "brandName": "Google",
+      "brandSliders": [
+        {
+          "brandImageSliderId": 1,
+          "BrandSliderImg": "https://i.ibb.co/LJY3m6g/the-average-tech-guy-Dsm-Dqi-Ydua-U-unsplash.jpg",
+          "title": "Unleash Brilliance with Google Pixel - Special Offer!",
+          "description": "Discover the extraordinary world of Google Pixel. Enjoy exclusive savings and top-notch features for a limited time. Elevate your mobile experience today."
+        },
+        {
+          "brandImageSliderId": 2,
+          "BrandSliderImg": "https://i.ibb.co/jbstnbV/sebastian-bednarek-BBuxn-Okl2-Uk-unsplash.jpg",
+          "title": "Exceptional Savings on Google Pixel 5 - Limited Time!",
+          "description": "Unlock innovation and capture moments with the Google Pixel 5. For a limited time, enjoy unbeatable discounts and cutting-edge technology. Grab this offer now for a next-level smartphone experience."
+        },
+        {
+          "brandImageSliderId": 3,
+          "BrandSliderImg": "https://i.ibb.co/20JVyth/rubaitul-azad-W3-Z2-ZNs1y4-I-unsplash.jpg",
+          "title": "Gmail Pro: Elevate Your Email Experience!",
+          "description": "Upgrade to Gmail Pro and enjoy an ad-free, feature-rich email experience. Streamline your communication, enhance productivity, and say goodbye to distractions."
+        }
+      ]
+    },
+    {
+      "brandName": "Apple",
+      "brandSliders": [
+        {
+          "brandImageSliderId": 1,
+          "BrandSliderImg": "https://i.ibb.co/LSjNmNN/simon-daoudi-2w-Foa040m8g-unsplash.jpg",
+          "title": "Time to Upgrade: Get the New Apple Watch Series Now!",
+          "description":"Experience the future on your wrist with the latest Apple Watch Series. Track your fitness, stay connected, and live smarter. Grab yours today and redefine your daily life."
+        },
+        {
+          "brandImageSliderId": 2,
+          "BrandSliderImg": "https://i.ibb.co/GcpZLHT/jonathan-francisca-Y9-Fvn-Y7-FU1-A-unsplash.jpg",
+          "title": "Unleash Your Potential with Mac Laptops - Exclusive Deal!",
+          "description": "Empower your work, creativity, and lifestyle with Mac laptops. Enjoy exceptional performance and sleek design with exclusive discounts. Don't miss this opportunity to upgrade your computing experience."
+        },
+        {
+          "brandImageSliderId": 3,
+          "BrandSliderImg": "https://i.ibb.co/GnXvV4P/n-tho-duc-hc-Q96rw8c-MI-unsplash.jpg",
+          "title":"Upgrade Your World with iPhone 12 - Special Promotion!",
+          "description": "Experience the future in your hands with the iPhone 12. Get the latest features, stunning design, and exclusive savings for a limited time. Elevate your mobile experience today."
+        }
+      ]
+    },
+    {
+      "brandName": "Sony",
+      "brandSliders": [
+        {
+          "brandImageSliderId": 1,
+          "BrandSliderImg": "https://i.ibb.co/3sSZT7Q/yearone-opl-CWB9-A0b-I-unsplash-1.jpg",
+          "title":  "Immerse in Sound: Sony Headphones, Unbeatable Offer!",
+          "description":"Dive into a world of pure audio bliss with Sony headphones. Get lost in your music, and enjoy exclusive discounts on premium sound quality. Elevate your listening experience today."
+        },
+        {
+          "brandImageSliderId": 2,
+          "BrandSliderImg": "https://i.ibb.co/pKG7rnT/jakub-sisulak-Vdq-Bc-Hw-Igo-I-unsplash.jpg",
+          "title": "Capture Life's Beauty with Sony Cameras - Exclusive Deal!",
+          "description": "Unleash your creativity and capture moments like a pro with Sony cameras. Enjoy exclusive discounts and exceptional features. Elevate your photography game now."
+        },
+        {
+          "brandImageSliderId": 3,
+          "BrandSliderImg": "https://i.ibb.co/b5c1tdD/jeshoots-com-e-Cktz-Gj-C-i-U-unsplash.jpg",
+          "title": "Game On with Sony PlayStation - Limited-Time Offer!",
+          "description": "Experience the ultimate gaming adventure with Sony PlayStation. Grab your controller and dive into exclusive savings on the latest games and hardware. Level up your gaming experience today."
+        }
+      ]
+    },
+    {
+      "brandName": "Samsung",
+      "brandSliders": [
+        {
+          "brandImageSliderId": 1,
+          "BrandSliderImg": "https://i.ibb.co/Jrs8wXN/joachim-pressl-Dv-ROqi-T-l8o-unsplash.jpg",
+          "title": "Boost Your Productivity with Samsung Laptops - Special Deal!",
+          "description":  "Supercharge your work and creativity with Samsung laptops. Enjoy powerful performance, sleek design, and exclusive savings. Elevate your computing experience with us today."
+        },
+        {
+          "brandImageSliderId": 2,
+          "BrandSliderImg": "https://i.ibb.co/Lrz0pS4/lenzil-gonsalves-Jyf6y-BJp-Gis-unsplash.jpg",
+          "title": "Stay Connected and Stylish with Samsung Watches - Exclusive Offer!",
+          "description": "Elevate your wristwear game with Samsung Watches. Seamlessly connect to your world and enjoy exclusive discounts on the latest smartwatches. Embrace the future of wearable technology."
+        },
+        {
+          "brandImageSliderId": 3,
+          "BrandSliderImg": "https://i.ibb.co/CK2Zxsq/anh-nhat-YKFBd-V-RRXI-unsplash.jpg",
+          "title":"Unleash the Power of Innovation: Samsung Galaxy 23 Ultra - Limited Time Offer!",
+          "description": "Experience the pinnacle of technology with the Samsung Galaxy 23 Ultra. Now, for a limited time, enjoy exclusive discounts on this cutting-edge smartphone. Redefine your mobile experience today!"
+        }
+      ]
+    },
+    {
+      "brandName": "Intel",
+      "brandSliders": [
+        {
+          "brandImageSliderId": 1,
+          "BrandSliderImg": "https://i.ibb.co/309kG0s/printed-circuit-board-with-chips-3d-illustration-technology-automation-407240-1683.jpg",
+          "title": "The Future of Computing: Introducing Intel's Latest Processor - Exclusive Launch Deal!",
+          "description": "Upgrade your computing power with Intel's cutting-edge processor. Be the first to experience unrivaled performance and efficiency. Get exclusive savings and elevate your computing experience today!"
+        },
+        {
+          "brandImageSliderId": 2,
+          "BrandSliderImg": "https://i.ibb.co/7N6BZMJ/slejven-djurakovic-0u-Xzo-Ez-YZ4-I-unsplash.jpg",
+          "title": "Elevate Your Computing with Intel Core i3 - Exclusive Savings!",
+          "description":  "Boost your productivity and speed up your tasks with the Intel Core i3 processor. Enjoy exclusive discounts on this efficient and reliable choice for your computing needs."
+        },
+        {
+          "brandImageSliderId": 3,
+          "BrandSliderImg": "https://i.ibb.co/2ZNnYzZ/christian-wiediger-CKp-Bh-TXv-Lis-unsplash.jpg",
+          "title": "Unleash Unprecedented Power: Intel Core i7 Processor - Exclusive Deal!",
+          "description": "Experience next-level performance with the Intel Core i7 processor. Take advantage of exclusive savings on this high-performance CPU and supercharge your computing tasks today."
+        }
+      ]
+    },
+    {
+      "brandName": "Microsoft"
+     
+    }
+  ]

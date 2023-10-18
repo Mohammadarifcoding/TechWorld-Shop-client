@@ -68,7 +68,7 @@ const Navbar = () => {
     <div>
      
     </div>
-    <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} ${dark ? 'bg-green-300' : 'bg-slate-950'} ${dark ? 'text-[#192655]' : 'text-white'}  `}>Login</button>
+    <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} ${dark ? 'bg-green-300' : 'bg-black'} ${dark ? 'text-[#192655]' : 'text-white'}  `}>Login</button>
     <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} md:block hidden bg-blue-500 text-white hover:text-black`}>Register</button>
   </div>
 </div>

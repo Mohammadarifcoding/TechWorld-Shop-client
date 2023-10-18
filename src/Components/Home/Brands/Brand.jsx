@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const Brand = ({data}) => {
     const {name,img , viewId , bannerImg , } = data
     const {dark} = useContext(AuthContext)
+    console.log(name)
     return (
 <div className={`p-4 ${dark ? 'bg-[#0c164d]' : 'bg-white  text-black rounded-lg bg-gradient-to-br from-gray-300 to-white shadow-2xl'}  max-w-[450px] w-full mx-auto text-white hover:scale-105 min-h-[350px] relative`}>
     
@@ -19,9 +21,12 @@ const Brand = ({data}) => {
     
     <img className=' w-[200px] h-full mx-auto' src={img} alt="" />
  </div>
+ <Link to={`/Brand/${name}`}>
  <div className={`${dark ? 'conto': 'secondCon'} mx-auto my-5`}>
   <div className={`${dark ? 'SuperStyle' : 'secondSuper' } `}><button >Show Products</button></div>
 </div>
+ </Link>
+
 
 
 

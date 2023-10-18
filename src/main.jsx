@@ -12,6 +12,8 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import MyCart from './Components/MyCart/MyCart';
 import AuthProvider from './Components/Provider/AuthProvider';
+import BrandPage from './Components/BrandPage/BrandPage';
+import { ThemeProvider } from '@material-tailwind/react';
 
 
 
@@ -41,6 +43,11 @@ const router = createBrowserRouter([
         path:'/Register',
         element:<Register></Register>
       }
+      ,{
+        path:'/Brand/:name',
+        element:<BrandPage></BrandPage>,
+        loader:()=> fetch('/BrandSlider.json')
+      }
     ]
   },
 ]);
@@ -48,8 +55,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <ThemeProvider>
     <AuthProvider>
     <RouterProvider router={router} />
     </AuthProvider>
+    </ThemeProvider>
   </React.StrictMode>
 )
