@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Home from './../Home/Home';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Navbar = () => {
-    const [dark,setDark] = useState(true)
+    // const [dark,setDark] = useState(true)
+    const { dark , setDark , name } = useContext(AuthContext)
     const link = <>
    
     <NavLink   to={'/'} className='px-3 py-2 my-2 mr-3 rounded-lg'>Home</NavLink>
@@ -34,9 +36,20 @@ const Navbar = () => {
     <div className='flex items-center'>
     <a className="btn btn-ghost md:block hidden normal-case text-xl"><img className='w-[60px]' src="/logo.png" alt="" /></a>
      <h2 className='font-medium'>TECH<span className={` ${dark? 'text-orange-400' : 'text-orange-600' }`}>WORLD</span></h2>
-     <button onClick={()=>{setDark(!dark)}} className='ml-4'>
+     <button  className='ml-4'>
      {
-        dark ? <BsFillMoonStarsFill></BsFillMoonStarsFill> : <BsFillSunFill></BsFillSunFill>
+        dark ? <>
+        <div onClick={()=>{setDark(!dark)}} className='flex gap-4  items-center'>
+        <BsFillMoonStarsFill></BsFillMoonStarsFill>
+        <input className="switch" type="checkbox" defaultChecked/>
+        </div>
+
+        </>  :<>
+        <div onClick={()=>{setDark(!dark)}} className='flex gap-2  items-center'>
+        <BsFillSunFill></BsFillSunFill>
+        <input className="switch" type="checkbox" defaultChecked/>
+        </div></>
+         
      }
      </button>
    
@@ -50,7 +63,10 @@ const Navbar = () => {
   <div className="navbar-end gap-4 ">
     <div className='flex md:flex-row flex-col  gap-2 items-center'>
         <img className='rounded-full w-[40px] ' src="/user.png" alt="" />
-        <h2 className='text-sm'>UserName</h2>
+        
+    </div>
+    <div>
+     
     </div>
     <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} ${dark ? 'bg-green-300' : 'bg-slate-950'} ${dark ? 'text-[#192655]' : 'text-white'}  `}>Login</button>
     <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} md:block hidden bg-blue-500 text-white hover:text-black`}>Register</button>

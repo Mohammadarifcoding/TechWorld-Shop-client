@@ -11,6 +11,7 @@ import AddProduct from './Components/AddProduct/AddProduct';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import MyCart from './Components/MyCart/MyCart';
+import AuthProvider from './Components/Provider/AuthProvider';
 
 
 
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=> fetch('/ShowRoom.json')
       },
       {
         path:'/AddProduct',
@@ -46,6 +48,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
-  </React.StrictMode>,
+    <AuthProvider>
+    <RouterProvider router={router} />
+    </AuthProvider>
+  </React.StrictMode>
 )
