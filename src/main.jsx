@@ -47,7 +47,7 @@ const router = createBrowserRouter([
         path:'/Brand/:name',
         element:<BrandPage></BrandPage>,
         loader:({params})=> fetch(`http://localhost:5000/slider/${params.name}`)
-      }
+      },
     ]
   },
 ]);

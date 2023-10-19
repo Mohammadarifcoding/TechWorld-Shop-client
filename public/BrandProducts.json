@@ -6,7 +6,8 @@
       "type": "Phone",
       "price": 999,
       "rating": "★★★★☆",
-      "viewId": "P1001"
+      "viewId": "P1001",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"]
     },
     {
       "image": "https://i.ibb.co/1GjtyhJ/4060988-1153-1.jpg",
@@ -15,6 +16,7 @@
       "type": "Laptop",
       "price": 1299,
       "rating": "★★★★☆",
+      "Extrarating": ["Excellent", "Good", "Average"],
       "viewId": "P1002"
     },
     {
@@ -24,6 +26,7 @@
       "type": "Headphones",
       "price": 349,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average"],
       "viewId": "P1003"
     },
     {
@@ -33,6 +36,7 @@
       "type": "Phone",
       "price": 799,
       "rating": "★★★★☆",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"],
       "viewId": "P1004"
     },
     {
@@ -42,6 +46,7 @@
       "type": "Processor",
       "price": 299,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"],
       "viewId": "P1005"
     },
     {
@@ -51,6 +56,7 @@
       "type": "Laptop",
       "price": 999,
       "rating": "★★★★☆",
+      "Extrarating": ["Excellent", "Good", "Average"],
       "viewId": "P1006"
     },
     {
@@ -60,6 +66,7 @@
       "type": "Phone",
       "price": 899,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average"],
       "viewId": "P1007"
     },
     {
@@ -68,6 +75,7 @@
       "brandName": "Sony",
       "type": "Gaming Console",
       "price": 499,
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"],
       "rating": "★★★★★",
       "viewId": "P1008"
     },
@@ -78,6 +86,7 @@
       "type": "Smart Speaker",
       "price": 99,
       "rating": "★★★★☆",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor"],
       "viewId": "P1009"
     },
     {
@@ -87,6 +96,7 @@
       "type": "Headphones",
       "price": 249,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average"],
       "viewId": "P1010"
     },
     {
@@ -96,6 +106,7 @@
       "type": "Processor",
       "price": 199,
       "rating": "★★★★☆",
+      "Extrarating": ["Excellent", "Good", "Average"],
       "viewId": "P1011"
     },
     {
@@ -105,6 +116,7 @@
       "type": "TV",
       "price": 799,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"],
       "viewId": "P1012"
     },
     {
@@ -113,6 +125,7 @@
       "brandName": "Google",
       "type": "Earbuds",
       "price": 159,
+      "Extrarating": ["Excellent", "Good", "Average", "Poor"],
       "rating": "★★★★☆",
       "viewId": "P1013"
     },
@@ -123,15 +136,17 @@
       "type": "TV",
       "price": 1999,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor"],
       "viewId": "P1014"
     },
     {
-      "image": "https://i.ibb.co/6wTPBNp/new-smartphone-balancing-with-pebbles-2.jpg",
-      "name": "Sony Xperia 1 III",
-      "brandName": "Sony",
-      "type": "Phone",
-      "price": 1199,
-      "rating": "★★★★☆",
+      "image": "https://i.ibb.co/syz4RZ5/samsung-memory-Syfek-Qxg-x-Q-unsplash.jpg",
+      "name": "Intel SSD 660p Series",
+      "brandName": "Intel",
+      "type": "Solid State Drive (SSD)",
+      "price": 149,
+      "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor"],
       "viewId": "P1015"
     },
     {
@@ -141,6 +156,7 @@
       "type": "Processor",
       "price": 499,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"],
       "viewId": "P1016"
     },
     {
@@ -150,6 +166,7 @@
       "type": "Tablet",
       "price": 799,
       "rating": "★★★★☆",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor"],
       "viewId": "P1017"
     },
     {
@@ -159,6 +176,7 @@
       "type": "Smartwatch",
       "price": 249,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor"],
       "viewId": "P1018"
     },
     {
@@ -168,6 +186,8 @@
       "type": "Earbuds",
       "price": 279,
       "rating": "★★★★★",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"],
+
       "viewId": "P1019"
     },
     {
@@ -177,6 +197,8 @@
       "type": "Laptop",
       "price": 399,
       "rating": "★★★★☆",
+      "Extrarating": ["Excellent", "Good", "Average", "Poor", "Terrible"],
+
       "viewId": "P1020"
     }
   ]
