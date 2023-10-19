@@ -5,17 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import BrandSlider from './BrandSlider';
+import BrandProducts from './BrandProducts';
 
 const BrandPage = () => {
-   const {name} = useParams()
+   const { name } = useParams()
    const LoadedData = useLoaderData()
-   const find = LoadedData.find(data => data.brandName == name)
-   console.log(find)
 
     return (
         <div>
 
-            <BrandSlider data={find}></BrandSlider>
+            <BrandSlider data={LoadedData}></BrandSlider>
+            <BrandProducts></BrandProducts>
         </div>
  
     );
