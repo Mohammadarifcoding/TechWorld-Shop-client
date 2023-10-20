@@ -4,7 +4,7 @@ import { AuthContext } from '../../Provider/AuthProvider';
 const Contact = () => {
     const {dark} = useContext(AuthContext)
     return (
-        <div>
+        <div>   
            <div>  
   <section className={`${dark ? 'bg-gray-900 text-white':'bg-gray-100'}  body-font relative`}>
   <div className="container px-5 py-24 mx-auto">
