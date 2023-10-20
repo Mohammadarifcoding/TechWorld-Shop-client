@@ -3,6 +3,7 @@ import Banner from './Banner/Banner';
 import Showroom from './Showroom/Showroom';
 import { useLoaderData } from 'react-router-dom';
 import Brands from './Brands/Brands';
+import Contact from './Contact/Contact';
 
 const Home = () => {
   const showRoom = useLoaderData()
@@ -11,6 +12,7 @@ const Home = () => {
           <Banner></Banner> 
           <Showroom data={showRoom}></Showroom>
           <Brands></Brands>
+          <Contact></Contact>
         </div>
     );
 };
