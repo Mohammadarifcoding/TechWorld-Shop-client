@@ -5,12 +5,12 @@ const Contact = () => {
     const {dark} = useContext(AuthContext)
     return (
         <div>
-               <div>  
+           <div>  
   <section className={`${dark ? 'bg-gray-900 text-white':'bg-gray-100'}  body-font relative`}>
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 ">Contact Us</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Give a knock and book the session for your event</p>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Ask for pre order</p>
     </div>
     <div className="lg:w-1/2 md:w-2/3 mx-auto">
       <div data-aos="fade-up" className="flex flex-wrap -m-2">
