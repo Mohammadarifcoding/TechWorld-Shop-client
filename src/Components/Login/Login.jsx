@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const { dark , setDark , In, update , Google , OUT ,  creatUser} = useContext(AuthContext)
-  
+    const location = useLocation()
+  const navigate = useNavigate()
     const handleLogin = e =>{
         e.preventDefault()
         const email = e.target.email.value
@@ -12,10 +14,21 @@ const Login = () => {
         In(email,password)
         .then(res => {
             console.log(res.user)
-
+            Swal.fire(
+              'Good job!',
+              'You are logeed in Successfully',
+              'success'
+            )
+            { location.state ? navigate(location.state) : navigate('/') }
+            
         })
         .catch(err => {
             console.log(err)
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: "Your password and email doesn't match",
+            })
         })
 
     }
@@ -24,9 +37,20 @@ const Login = () => {
         Google()
         .then(res => {
             console.log(res.user)
+            Swal.fire(
+              'Good job!',
+              'You are logeed in Successfully',
+              'success'
+            )
+            { location.state ? navigate(location.state) : navigate('/') }
         })
         .catch(err => {
             console.log(err)
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Something went wrong! Please try again',
+            })
         })
     }
 

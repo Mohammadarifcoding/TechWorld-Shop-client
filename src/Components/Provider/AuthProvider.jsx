@@ -13,7 +13,7 @@ const AuthProvider = ({children}) => {
    const auth = getAuth(app)
     const [dark,setDark] = useState(true)
     const [user,setUser] = useState(null)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     const creatUser = (email,password)=>{
       setLoading(true)
@@ -55,7 +55,7 @@ const AuthProvider = ({children}) => {
       return signInWithEmailAndPassword(auth,email,password)
   }
 
-    const AuthInfo = { dark , setDark , In, update , Google , OUT ,  creatUser }
+    const AuthInfo = { dark , setDark, loading ,user, In, update , Google , OUT ,  creatUser }
     // const AuthInfo = {dark,setDark}
    
     return (

@@ -8,7 +8,7 @@ import { FaBuromobelexperte , FaListCheck , FaSellsy } from "react-icons/fa6";
 const Showroom = ({data}) => {
     const { dark } = useContext(AuthContext)
     return (
-        <div className={` ${dark ? "bg-cover bg-center  bg-[url('showroom.jpg')] w-full min-h-[60vh]" : ""} `}>
+        <div className={` ${dark ? "bg-cover bg-center  bg-[url('/showroom.jpg')] w-full min-h-[60vh]" : ""} `}>
             <div className={`${dark? 'w-full h-full min-h-[60vh] backdrop-brightness-[0.3]' : ""}`}>
             <h2 className={` ${dark? 'text-white':'text-black '} text-3xl text-center pt-20 font-bold`}>Visit <span className='text-orange-500'>OUR</span> New Showroom</h2>
             <p className={` ${dark? 'text-gray-400':'text-gray-800 '} max-w-2xl py-4 mx-auto text-center`}>Discover a world of technology at our exclusive showroom. Here, you can experience firsthand the latest gadgets and innovations from the top tech companies like Apple, Samsung, Sony, Google, and Intel.</p>

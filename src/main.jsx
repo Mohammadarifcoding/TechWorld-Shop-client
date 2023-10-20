@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import {
@@ -11,10 +11,12 @@ import AddProduct from './Components/AddProduct/AddProduct';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import MyCart from './Components/MyCart/MyCart';
-import AuthProvider from './Components/Provider/AuthProvider';
+import AuthProvider, { AuthContext } from './Components/Provider/AuthProvider';
 import BrandPage from './Components/BrandPage/BrandPage';
 import { ThemeProvider } from '@material-tailwind/react';
 import UpdateForm from './Components/UpdateForm/UpdateForm';
+import DeTailsProduct from './Components/BrandPage/DeTailsProduct';
+import PrivateProvider from './Components/Provider/PrivateRoute';
 
 
 
@@ -26,7 +28,7 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
-        loader:()=> fetch('http://localhost:5000/service')
+        loader:()=> fetch('https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/service')
       },
       {
         path:'/AddProduct',
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
 
       },{
         path:'/cart',
-        element:<MyCart></MyCart>
+        element:<PrivateProvider><MyCart></MyCart></PrivateProvider>,
       },
       {
         path:'/Login',
@@ -47,12 +49,16 @@ const router = createBrowserRouter([
       ,{
         path:'/Brand/:name',
         element:<BrandPage></BrandPage>,
-        loader:({params})=> fetch(`http://localhost:5000/slider/${params.name}`)
+        loader:({params})=> fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/slider/${params.name}`)
       },
       {
         path:'/update/:id',
-        element:<UpdateForm></UpdateForm>,
-        loader:({params})=> fetch(`http://localhost:5000/update/${params.id}`)
+        element:<PrivateProvider><UpdateForm></UpdateForm></PrivateProvider>,
+        loader:({params})=> fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/update/${params.id}`)
+      },{
+        path:'/Details/:id',
+        element:<PrivateProvider><DeTailsProduct></DeTailsProduct></PrivateProvider>,
+        loader:({params})=> fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/update/${params.id}`)
       }
     ]
   },

@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Register = () => {
     const { dark , setDark , In, update , Google , OUT ,  creatUser} = useContext(AuthContext)
-
+   const navigate = useNavigate()
+    const lo = useLocation()
     const handleRegister = e =>{
         e.preventDefault()
         const form = e.target
@@ -12,9 +14,52 @@ const Register = () => {
         const email = form.email.value
         const password = form.password.value
         const photoUrl = form.photoUrl.value
+        if(password.length < 6){
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'The password need to contain 6 character',
+          })
+            return
+        }
+        else if(!/[A-Z]/.test(password)){
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'The password need to contain Capital letter',
+          })
+          return
+        }
+        else if(!/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)){
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'The password need to contain special character',
+          })
+          return
+     }
+     
         creatUser(email,password)
         .then(res => {
             console.log(res.user)
+            update(name,photoUrl)
+            .then()
+            .catch()
+            Swal.fire({
+                title: 'Your account have been created.',
+                width: 600,
+                padding: '3em',
+                color: '#716add',
+                background: '#fff url(/images/trees.png)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nyan-cat.gif")
+                  left top
+                  no-repeat
+                `
+              })
+
+             navigate('/')
         })
         .catch(err=>{
             console.log(err)
@@ -26,6 +71,22 @@ const Register = () => {
         Google()
         .then(res => {
             console.log(res.user)
+            Swal.fire({
+              title: 'Your account have been created.',
+              width: 600,
+              padding: '3em',
+              color: '#716add',
+              background: '#fff url(/images/trees.png)',
+              backdrop: `
+                rgba(0,0,123,0.4)
+                url("/images/nyan-cat.gif")
+                left top
+                no-repeat
+              `
+            })
+
+           navigate('/')
+            
         })
         .catch(err => {
             console.log(err)

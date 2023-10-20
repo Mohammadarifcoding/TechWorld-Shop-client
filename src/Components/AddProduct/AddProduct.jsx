@@ -24,7 +24,7 @@ const AddProduct = () => {
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
-        fetch('http://localhost:5000/Product',{
+        fetch('https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/Product',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
@@ -97,6 +97,11 @@ const AddProduct = () => {
       <div className='flex flex-col gap-2 lg:w-[420px] mb-5'>
         <label htmlFor="Photo">PhotoUrl</label>
         <input  name="image" className="px-3 py-2"    placeholder="Enter photo URL"  />
+        
+      </div>
+      <div className='flex flex-col gap-2 lg:w-[420px] mb-5'>
+        <label htmlFor="description">Description</label>
+        <input  name="description" className="px-3 py-2"    placeholder="Describe about the product"  />
         
       </div>
     </div>

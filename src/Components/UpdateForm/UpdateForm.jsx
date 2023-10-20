@@ -64,7 +64,7 @@ const UpdateForm = () => {
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/update/${_id}`,{
+        fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/update/${_id}`,{
         method:'PUT',
         headers:{
             'content-type':'application/json'

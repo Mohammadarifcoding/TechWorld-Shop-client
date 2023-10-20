@@ -7,7 +7,14 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 const Navbar = () => {
     // const [dark,setDark] = useState(true)
-    const { dark , setDark , name } = useContext(AuthContext)
+    const { dark , setDark , name ,OUT, user } = useContext(AuthContext)
+
+    const handleSignOut = ()=>{
+      OUT()
+      .then()
+      .catch()
+    }
+    console.log(user)
     const link = <>
    
     <NavLink   to={'/'} className='px-3 py-2 my-2 mr-3 rounded-lg'>Home</NavLink>
@@ -61,16 +68,65 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-4 ">
-    <div className='flex md:flex-row flex-col  gap-2 items-center'>
+    {
+      user ? <>
+          <div className=' lg:block md:block sm:block hidden  gap-2 items-center'>
+<div className='flex md:flex-row flex-col gap-2 items-center'>
+<img className='rounded-full w-[40px] ' src={user.photoURL} alt="" />
+<p className='font-medium text-center'>{user.displayName}</p>
+</div>
+            
+        
+    </div>
+    <button onClick={handleSignOut} className='btn hover:text-red-800 bg-red-800 hover:bg-red-950 text-white'>Sign Out</button>
+      </> : <>
+      <div className='flex md:flex-row flex-col  gap-2 items-center'>
         <img className='rounded-full w-[40px] ' src="/user.png" alt="" />
         
     </div>
+    
+      <Link to={'/login'}>
+      <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} ${dark ? 'bg-green-300' : 'bg-black'} ${dark ? 'text-[#192655]' : 'text-white'}  `}>Login</button>
+
+      </Link>
+      </>
+    }
+
     <div>
      
     </div>
-    <Link to={'/login'}>
+    {/* {
+          user ?   
+        
+               <div className="navbar-end gap-5">
+                <div className='flex flex-col items-center mx-3'>
+                <img className='w-[50px] rounded-full' src={user.photoURL} alt="" />
+                <p className='font-medium text-center'>{user.displayName}</p>
+                </div>
+
+              
+                <NavLink >
+              <button className='btn bg-red-800 hover:bg-red-950 text-white'>Sign Out</button>
+                </NavLink>
+         </div> :
+               <div className="navbar-end  gap-1 ">
+                <div className='flex flex-col items-center'>
+                <img className='w-[50px]' src="/images/user.png" alt="" />
+                
+                </div>
+
+              
+                 <NavLink to='/login'>
+      <button className='btn bg-red-800 hover:bg-red-950 text-white'>Log In</button>
+        </NavLink>
+
+                 </div>
+   
+        } */}
+        
+    {/* <Link to={'/login'}>
     <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} ${dark ? 'bg-green-300' : 'bg-black'} ${dark ? 'text-[#192655]' : 'text-white'}  `}>Login</button>
-    </Link>
+    </Link> */}
     {/* <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} md:block hidden bg-blue-500 text-white hover:text-black`}>Register</button> */}
   </div>
 </div>
