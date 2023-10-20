@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Home from './../Home/Home';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
@@ -68,8 +68,10 @@ const Navbar = () => {
     <div>
      
     </div>
+    <Link to={'/login'}>
     <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} ${dark ? 'bg-green-300' : 'bg-black'} ${dark ? 'text-[#192655]' : 'text-white'}  `}>Login</button>
-    <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} md:block hidden bg-blue-500 text-white hover:text-black`}>Register</button>
+    </Link>
+    {/* <button className={`btn ${dark ? '' : 'border hover:border-black hover:text-black'} md:block hidden bg-blue-500 text-white hover:text-black`}>Register</button> */}
   </div>
 </div>
      

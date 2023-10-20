@@ -3,7 +3,7 @@ import React from 'react';
 const Nodata = () => {
     return (
         <div>
-            No data
+            <img className='w-full' src="/NO_data.jpg" alt="" />
         </div>
     );
 };

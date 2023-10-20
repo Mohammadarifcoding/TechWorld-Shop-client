@@ -14,6 +14,7 @@ import MyCart from './Components/MyCart/MyCart';
 import AuthProvider from './Components/Provider/AuthProvider';
 import BrandPage from './Components/BrandPage/BrandPage';
 import { ThemeProvider } from '@material-tailwind/react';
+import UpdateForm from './Components/UpdateForm/UpdateForm';
 
 
 
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
         element:<BrandPage></BrandPage>,
         loader:({params})=> fetch(`http://localhost:5000/slider/${params.name}`)
       },
+      {
+        path:'/update/:id',
+        element:<UpdateForm></UpdateForm>,
+        loader:({params})=> fetch(`http://localhost:5000/update/${params.id}`)
+      }
     ]
   },
 ]);

@@ -8,6 +8,7 @@ import {
     Tooltip,
   } from "@material-tailwind/react";
 import { AuthContext } from '../Provider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const Product = ({data}) => {
     const {dark} = useContext(AuthContext)
@@ -30,7 +31,8 @@ const Product = ({data}) => {
           </div>
 
         </CardBody>
-        <CardFooter className="flex justify-center gap-7 pt-2">
+        <CardFooter className="flex justify-center gap-7 flex-col items-center mx-auto pt-2">
+          <div>
           <Tooltip content="Rating Point">
             <Typography
               as="a"
@@ -44,8 +46,24 @@ const Product = ({data}) => {
               }
             </Typography>
           </Tooltip>
+          </div>
+          <div className='flex gap-4'>
+            <Link to={`/update/${_id}`}>
+            <button className="button2">
+             Update
+                </button>
+            </Link>
+               <Link to={`/Details/${_id}`}>
+               <button className="button2">
+             See Details
+                </button>
+               </Link>
+
+          </div>
+          
+   
         </CardFooter>
-        
+       
       </Card>
     );
 };
