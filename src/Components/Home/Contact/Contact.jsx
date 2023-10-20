@@ -5,7 +5,7 @@ const Contact = () => {
     const {dark} = useContext(AuthContext)
     return (
         <div>
-               <div>
+               <div>  
   <section className={`${dark ? 'bg-gray-900 text-white':'bg-gray-100'}  body-font relative`}>
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-12">
