@@ -6,7 +6,7 @@ const Brands = () => {
     const { dark } = useContext(AuthContext)
     const [data,setdata] = useState([])
     useEffect(()=>{
-        fetch('https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/Brand')
+        fetch('https://tech-world-wheat.vercel.app/Brand')
         .then(res => res.json())
         .then(value => setdata(value))
     },[])

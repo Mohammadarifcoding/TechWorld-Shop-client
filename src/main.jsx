@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
-        loader:()=> fetch('https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/service')
+        loader:()=> fetch('https://tech-world-wheat.vercel.app/service')
       },
       {
         path:'/AddProduct',
@@ -49,16 +49,16 @@ const router = createBrowserRouter([
       ,{
         path:'/Brand/:name',
         element:<BrandPage></BrandPage>,
-        loader:({params})=> fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/slider/${params.name}`)
+        loader:({params})=> fetch(`https://tech-world-wheat.vercel.app/slider/${params.name}`)
       },
       {
         path:'/update/:id',
         element:<PrivateProvider><UpdateForm></UpdateForm></PrivateProvider>,
-        loader:({params})=> fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/update/${params.id}`)
+        loader:({params})=> fetch(`https://tech-world-wheat.vercel.app/update/${params.id}`)
       },{
         path:'/Details/:id',
         element:<PrivateProvider><DeTailsProduct></DeTailsProduct></PrivateProvider>,
-        loader:({params})=> fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/update/${params.id}`)
+        loader:({params})=> fetch(`https://tech-world-wheat.vercel.app/update/${params.id}`)
       }
     ]
   },

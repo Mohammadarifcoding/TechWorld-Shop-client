@@ -24,7 +24,7 @@ const AddProduct = () => {
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
-        fetch('https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/Product',{
+        fetch('https://tech-world-wheat.vercel.app/Product',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
@@ -85,15 +85,6 @@ const AddProduct = () => {
                             
                        </div>
                        <div>
-      {/* <div className='flex flex-col gap-2 lg:w-[420px] mb-5'>
-        <label htmlFor="Photo">Photo</label>
-        <input type="file" name="image" accept='image/*' onChange={(e)=> handleFileUpload(e)} />
-        {
-            previewImage && (
-                <img src={previewImage} alt="Uploaded Preview" className='mt-2 max-w-[500px] max-h-[200px]'/>
-            )
-        }
-      </div> */}
       <div className='flex flex-col gap-2 lg:w-[420px] mb-5'>
         <label htmlFor="Photo">PhotoUrl</label>
         <input  name="image" className="px-3 py-2"    placeholder="Enter photo URL"  />

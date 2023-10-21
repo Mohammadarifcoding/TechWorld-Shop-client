@@ -20,7 +20,7 @@ const DeTailsProduct = () => {
 
         const AddCart = ()=>{
           const value = { email:user.email , product:viewId , image, name, price, brandName }
-          fetch('https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/AddtoCart',{
+          fetch('https://tech-world-wheat.vercel.app/AddtoCart',{
             method:'POST',
             headers:{
               'content-type':'application/json'

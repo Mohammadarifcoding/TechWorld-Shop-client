@@ -16,7 +16,7 @@ const CartProduct = ({data,handleDelete}) => {
       } = data;
 
     //  const handleDelete = ()=>{
-    //     fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app//delete/${data._id}`,{
+    //     fetch(`https://tech-world-wheat.vercel.app//delete/${data._id}`,{
     //         method:'DELETE'
     //     })
     //     .then(res => res.json())

@@ -14,7 +14,7 @@ const BrandPage = () => {
 
     const [data,setData] = useState([])
     useEffect(()=>{
-        fetch(`https://tech-shop-qm3iiok1i-mohammadarifcoding.vercel.app/BrandProduct/${name}`)
+        fetch(`https://tech-world-wheat.vercel.app/BrandProduct/${name}`)
         .then(res => res.json())
         .then(value  => setData(value))
     },[])
