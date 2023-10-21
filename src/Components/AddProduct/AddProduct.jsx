@@ -24,7 +24,7 @@ const AddProduct = () => {
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
-        fetch('https://tech-world-wheat.vercel.app/Product',{
+        fetch('https://tech-world-shop.vercel.app/Product',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

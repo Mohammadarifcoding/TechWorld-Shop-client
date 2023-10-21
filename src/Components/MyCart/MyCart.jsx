@@ -7,7 +7,7 @@ const MyCart = () => {
     const [data, setdata ] = useState([])
     const {user , dark}  = useContext(AuthContext)    
     useEffect(()=>{
-        fetch(`https://tech-world-wheat.vercel.app/Cart/${user.email}`)
+        fetch(`https://tech-world-shop.vercel.app/Cart/${user.email}`)
         .then(res => res.json())
         .then(value => setdata(value))
     },[])
@@ -22,7 +22,7 @@ const MyCart = () => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://tech-world-wheat.vercel.app/delete/${id}`,{
+                fetch(`https://tech-world-shop.vercel.app/delete/${id}`,{
                     method:'DELETE'
                 })
                 .then(res => res.json())

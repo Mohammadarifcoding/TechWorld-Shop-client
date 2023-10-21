@@ -14,7 +14,7 @@ const Product = ({data}) => {
     const {dark} = useContext(AuthContext)
     const {_id,image,name,brandName,type,price,rating,ExtraratingviewId} = data;
     return (
-        <Card className={`max-w-[384px] mx-auto  bg-white shadow-2xl `}>
+        <Card className={`mx-auto  bg-white shadow-2xl m-5`}>
         <CardHeader floated={false} className="max-h-80">
           <img src={image} alt="profile-picture" />
         </CardHeader>

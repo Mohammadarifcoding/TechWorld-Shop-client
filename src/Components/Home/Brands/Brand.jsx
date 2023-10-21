@@ -7,7 +7,7 @@ const Brand = ({data}) => {
     const {dark} = useContext(AuthContext)
     console.log(name)
     return (
-<div className={`p-4 ${dark ? 'bg-[#0c164d]' : 'bg-white  text-black rounded-lg bg-gradient-to-br from-gray-300 to-white shadow-2xl'}  max-w-[450px] w-full mx-auto text-white hover:scale-105 min-h-[350px] relative`}>
+<div className={`p-4 ${dark ? 'bg-[#0c164d]' : 'bg-white  text-black rounded-lg bg-gradient-to-br from-gray-300 to-white shadow-2xl'}  max-w-[450px] w-full mx-auto overflow-hidden duration-300 ease-in text-white hover:scale-105 min-h-[350px] relative`}>
     
  <div className='w-full h-[250px] relative'>
  <img className='h-full rounded-lg w-full' src={bannerImg} alt="" />
